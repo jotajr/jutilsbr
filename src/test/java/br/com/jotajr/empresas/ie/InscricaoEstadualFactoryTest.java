@@ -1,3 +1,4 @@
+package br.com.jotajr.empresas.ie;
 
 import br.com.jotajr.empresas.ie.InscricaoEstadual;
 import br.com.jotajr.empresas.ie.InscricaoEstadualFactory;
