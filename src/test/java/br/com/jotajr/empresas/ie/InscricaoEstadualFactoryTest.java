@@ -1,15 +1,9 @@
 package br.com.jotajr.empresas.ie;
 
-import br.com.jotajr.empresas.ie.InscricaoEstadual;
-import br.com.jotajr.empresas.ie.InscricaoEstadualFactory;
 import org.junit.Before;
 import org.junit.Test;
 
-import static junit.framework.Assert.assertNull;
-import static junit.framework.TestCase.assertNotNull;
-import static org.junit.Test.*;
-
-import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.*;
 
 
 /**
