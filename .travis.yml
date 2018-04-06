@@ -1,10 +1,10 @@
 language: java
 jdk: oraclejdk8
+sudo: false # faster builds
 
 install: true
 script:
-  - ./mvnw clean install
-
+  - mvn clean package
 
 cache:
   directories:
