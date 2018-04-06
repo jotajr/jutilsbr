@@ -19,7 +19,7 @@ public abstract class InscricaoEstadualFactory
         InscricaoEstadual ie = null;
 
         if (EstadosEnum.ACRE.getSigla().equalsIgnoreCase(estado))
-            ie = new InscricaoEstadualAC();
+            ie = new InscricaoEstadualDFAC();
         else if (EstadosEnum.ALAGOAS.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualAL();
         else if (EstadosEnum.AMAPA.getSigla().equalsIgnoreCase(estado))
@@ -29,9 +29,9 @@ public abstract class InscricaoEstadualFactory
         else if (EstadosEnum.BAHIA.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualBA();
         else if (EstadosEnum.CEARA.getSigla().equalsIgnoreCase(estado))
-            ie = new InscricaoEstadualCE();
+            ie = new InscricaoEstadualPBSECE();
         else if (EstadosEnum.DISTRITOFEDERAL.getSigla().equalsIgnoreCase(estado))
-            ie = new InscricaoEstadualDF();
+            ie = new InscricaoEstadualDFAC();
         else if (EstadosEnum.ESPIRITOSANTO.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualES();
         else if (EstadosEnum.GOIAS.getSigla().equalsIgnoreCase(estado))
@@ -47,7 +47,7 @@ public abstract class InscricaoEstadualFactory
         else if (EstadosEnum.PARA.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualPA();
         else if (EstadosEnum.PARAIBA.getSigla().equalsIgnoreCase(estado))
-            ie = new InscricaoEstadualPB();
+            ie = new InscricaoEstadualPBSECE();
         else if (EstadosEnum.PARANA.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualPR();
         else if (EstadosEnum.PERNAMBUCO.getSigla().equalsIgnoreCase(estado))
@@ -69,7 +69,7 @@ public abstract class InscricaoEstadualFactory
         else if (EstadosEnum.SAOPAULO.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualSP();
         else if (EstadosEnum.SERGIPE.getSigla().equalsIgnoreCase(estado))
-            ie = new InscricaoEstadualSE();
+            ie = new InscricaoEstadualPBSECE();
         else if (EstadosEnum.TOCANTINS.getSigla().equalsIgnoreCase(estado)) {
             ie = new InscricaoEstadualTO();
         }

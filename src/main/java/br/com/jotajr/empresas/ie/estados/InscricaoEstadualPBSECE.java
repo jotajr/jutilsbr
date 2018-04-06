@@ -2,10 +2,13 @@ package br.com.jotajr.empresas.ie.estados;
 
 import br.com.jotajr.empresas.ie.InscricaoEstadualBase;
 
-public class InscricaoEstadualCE extends InscricaoEstadualBase {
-    private static final Integer[] MULTIPLICADOR = new Integer[]{Integer.valueOf(9), Integer.valueOf(8), Integer.valueOf(7), Integer.valueOf(6), Integer.valueOf(5), Integer.valueOf(4), Integer.valueOf(3), Integer.valueOf(2)};
+public class InscricaoEstadualPBSECE extends InscricaoEstadualBase {
 
-    public InscricaoEstadualCE() {
+    private static final Integer[] MULTIPLICADOR = new Integer[]{Integer.valueOf(9), Integer.valueOf(8),
+            Integer.valueOf(7), Integer.valueOf(6), Integer.valueOf(5), Integer.valueOf(4),
+            Integer.valueOf(3), Integer.valueOf(2)};
+
+    public InscricaoEstadualPBSECE() {
     }
 
     public boolean validar(String numero) {
@@ -26,4 +29,3 @@ public class InscricaoEstadualCE extends InscricaoEstadualBase {
         return valido;
     }
 }
-
