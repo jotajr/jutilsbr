@@ -1,66 +1,76 @@
 package br.com.jotajr.empresas.ie;
 
 import br.com.jotajr.empresas.ie.estados.*;
+import br.com.jotajr.enums.EstadosEnum;
 
+/**
+ * Classe responsável por instanciar classe de inscrição estadual
+ * dependendo do estado.
+ */
 public abstract class InscricaoEstadualFactory
 {
+    /**
+     * Retorna uma instância de validador de Inscrição Estadual
+     * @param estado o estado solicitado
+     * @return instância de validado para o estado
+     */
     public static InscricaoEstadual getInstance(String estado)
     {
         InscricaoEstadual ie = null;
 
-        if ("AC".equalsIgnoreCase(estado))
+        if (EstadosEnum.ACRE.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualAC();
-        else if ("AL".equalsIgnoreCase(estado))
+        else if (EstadosEnum.ALAGOAS.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualAL();
-        else if ("AP".equalsIgnoreCase(estado))
+        else if (EstadosEnum.AMAPA.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualAP();
-        else if ("AM".equalsIgnoreCase(estado))
+        else if (EstadosEnum.AMAZONAS.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualAM();
-        else if ("BA".equalsIgnoreCase(estado))
+        else if (EstadosEnum.BAHIA.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualBA();
-        else if ("CE".equalsIgnoreCase(estado))
+        else if (EstadosEnum.CEARA.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualCE();
-        else if ("DF".equalsIgnoreCase(estado))
+        else if (EstadosEnum.DISTRITOFEDERAL.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualDF();
-        else if ("ES".equalsIgnoreCase(estado))
+        else if (EstadosEnum.ESPIRITOSANTO.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualES();
-        else if ("GO".equalsIgnoreCase(estado))
+        else if (EstadosEnum.GOIAS.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualGO();
-        else if ("MA".equalsIgnoreCase(estado))
+        else if (EstadosEnum.MARANHAO.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualMA();
-        else if ("MT".equalsIgnoreCase(estado))
+        else if (EstadosEnum.MATOGROSSO.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualMT();
-        else if ("MS".equalsIgnoreCase(estado))
+        else if (EstadosEnum.MATOGROSSODOSUL.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualMS();
-        else if ("MG".equalsIgnoreCase(estado))
+        else if (EstadosEnum.MINASGERAIS.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualMG();
-        else if ("PA".equalsIgnoreCase(estado))
+        else if (EstadosEnum.PARA.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualPA();
-        else if ("PB".equalsIgnoreCase(estado))
+        else if (EstadosEnum.PARAIBA.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualPB();
-        else if ("PR".equalsIgnoreCase(estado))
+        else if (EstadosEnum.PARANA.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualPR();
-        else if ("PE".equalsIgnoreCase(estado))
+        else if (EstadosEnum.PERNAMBUCO.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualPE();
-        else if ("PI".equalsIgnoreCase(estado))
+        else if (EstadosEnum.PIAUI.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualPI();
-        else if ("RJ".equalsIgnoreCase(estado))
+        else if (EstadosEnum.RIODEJANEIRO.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualRJ();
-        else if ("RN".equalsIgnoreCase(estado))
+        else if (EstadosEnum.RIOGRANDEDONORTE.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualRN();
-        else if ("RS".equalsIgnoreCase(estado))
+        else if (EstadosEnum.RIOGRANDEDOSUL.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualRS();
-        else if ("RO".equalsIgnoreCase(estado))
+        else if (EstadosEnum.RONDONIA.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualRO();
-        else if ("RR".equalsIgnoreCase(estado))
+        else if (EstadosEnum.RORAIMA.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualRR();
-        else if ("SC".equalsIgnoreCase(estado))
+        else if (EstadosEnum.SANTACATARINA.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualSC();
-        else if ("SP".equalsIgnoreCase(estado))
+        else if (EstadosEnum.SAOPAULO.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualSP();
-        else if ("SE".equalsIgnoreCase(estado))
+        else if (EstadosEnum.SERGIPE.getSigla().equalsIgnoreCase(estado))
             ie = new InscricaoEstadualSE();
-        else if ("TO".equalsIgnoreCase(estado)) {
+        else if (EstadosEnum.TOCANTINS.getSigla().equalsIgnoreCase(estado)) {
             ie = new InscricaoEstadualTO();
         }
 

@@ -1,9 +1,17 @@
 package br.com.jotajr.empresas;
 
+/**
+ * Classe que valida dados de empresas
+ */
 public class ValidaDadosEmpresa {
 
     private static final int[] pesoCNPJ = {6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2};
 
+    /**
+     * Método para validação de CNPJ
+     * @param cnpj CNPJ a ser validado
+     * @return true se for valido e falso caso contrário
+     */
     public static boolean isValidCNPJ(String cnpj) {
 
         cnpj = cnpj.replaceAll("[/ \\-\\+\\.\\^:,]","");

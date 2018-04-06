@@ -3,7 +3,10 @@ package br.com.jotajr.empresas.ie.estados;
 import br.com.jotajr.empresas.ie.InscricaoEstadualBase;
 
 public class InscricaoEstadualSC extends InscricaoEstadualBase {
-    private static final Integer[] MULTIPLICADOR = new Integer[]{Integer.valueOf(9), Integer.valueOf(8), Integer.valueOf(7), Integer.valueOf(6), Integer.valueOf(5), Integer.valueOf(4), Integer.valueOf(3), Integer.valueOf(2)};
+
+    private static final Integer[] MULTIPLICADOR = new Integer[]{Integer.valueOf(9), Integer.valueOf(8),
+            Integer.valueOf(7), Integer.valueOf(6), Integer.valueOf(5), Integer.valueOf(4),
+            Integer.valueOf(3), Integer.valueOf(2)};
 
     public InscricaoEstadualSC() {
     }
